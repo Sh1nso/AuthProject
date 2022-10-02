@@ -3,6 +3,9 @@ from marshmallow import Schema, fields
 from setup_db import db
 
 
+# Анимичные модели, Доменные модели
+# ORMView
+
 class Movie(db.Model):
     __tablename__ = 'movie'
     id = db.Column(db.Integer, primary_key=True)
